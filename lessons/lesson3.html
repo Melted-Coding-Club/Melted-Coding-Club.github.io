@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Club - Conditional Statements and Loops</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages.css">
+</head>
+
+<body>
+<header>
+    <a href="../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <h2>Lesson 3 - Conditional Statements and Loops</h2>
+
+    <section>
+        <h3>Conditional Statements</h3>
+        <p>
+            Conditional statements are used to perform different actions based on different conditions.
+            In Python, the most common conditional statements are <span class="statement">if</span>, <span class="statement">elif</span>, and <span class="statement">else</span>.
+        </p>
+        <p>Here's an example:</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3<br>4<br>5
+</div>
+<code class="code-content">
+<span class="variable">age</span> = <span class="datatype">18</span>
+<span class="statement">if</span> <span class="variable">age</span> <span class="operator">>=</span> <span class="datatype">18</span>:
+<span class="function">print</span>(<span class="datatype">"You are an adult."</span>)
+<span class="statement">else</span>:
+<span class="function">print</span>(<span class="datatype">"You are a minor."</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>You are an adult.</code></p>
+    </section>
+
+    <section>
+        <h3>Nested and Multiple Conditions</h3>
+        <p>
+            You can check multiple conditions using <span class="statement">elif</span> or nest conditions inside each other.
+            For example:
+        </p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7
+</div>
+<code class="code-content">
+<span class="variable">score</span> = <span class="datatype">85</span>
+<span class="statement">if</span> <span class="variable">score</span> <span class="operator">>=</span> <span class="datatype">90</span>:
+    <span class="function">print</span>(<span class="datatype">"Grade: A"</span>)
+<span class="statement">elif</span> <span class="variable">score</span> <span class="operator">>=</span> <span class="datatype">80</span>:
+    <span class="function">print</span>(<span class="datatype">"Grade: B"</span>)
+<span class="statement">else</span>:
+    <span class="function">print</span>(<span class="datatype">"Grade: C"</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>Grade: B</code></p>
+    </section>
+
+    <section>
+        <h3>Loops</h3>
+        <p>
+            Loops are used to repeat a block of code multiple times. In Python, the two main types of loops are:
+        </p>
+        <ul>
+            <li><span class="statement">for</span> loops - Used for iterating over a sequence (e.g., a list, tuple, string, or range).</li>
+            <li><span class="statement">while</span> loops - Repeats a block of code as long as a condition is true.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>For Loops</h3>
+        <p>Example of a <span class="statement">for</span> loop:</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3
+</div>
+<code class="code-content">
+<span class="variable">numbers</span> = <span class="datatype">[1, 2, 3, 4, 5]</span>
+<span class="statement">for</span> <span class="variable">num</span> <span class="statement">in</span> <span class="variable">numbers</span>:
+    <span class="function">print</span>(<span class="datatype">f"Number: {num}"</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output:</p>
+        <code>
+            Number: 1<br>
+            Number: 2<br>
+            Number: 3<br>
+            Number: 4<br>
+            Number: 5
+        </code>
+    </section>
+
+    <section>
+        <h3>While Loops</h3>
+        <p>Example of a <span class="statement">while</span> loop:</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3<br>4
+</div>
+<code class="code-content">
+<span class="variable">count</span> = <span class="datatype">0</span>
+<span class="statement">while</span> <span class="variable">count</span> <span class="operator"><</span> <span class="datatype">5</span>:
+    <span class="function">print</span>(<span class="datatype">f"Count: {count}"</span>)
+    <span class="variable">count</span> <span class="operator">+=</span> <span class="datatype">1</span>
+                </code>
+            </pre>
+        </div>
+        <p>This would output:</p>
+        <code>
+            Count: 0<br>
+            Count: 1<br>
+            Count: 2<br>
+            Count: 3<br>
+            Count: 4
+        </code>
+    </section>
+</main>
+
+<div class="button-nav">
+    <button class="nav-button" onclick="location.href='lesson2.html'">⬅ Previous Lesson</button>
+    <button class="nav-button" onclick="location.href='../projects/1.1-Guess-the-Number/overview.html'">🛠 Relevant Project - 1a</button>
+    <button class="nav-button" onclick="location.href='lesson4.html'">➡ Next Lesson</button>
+</div>
+
+<script src="../scripts/copy-code.js"></script>
+</body>
+</html>

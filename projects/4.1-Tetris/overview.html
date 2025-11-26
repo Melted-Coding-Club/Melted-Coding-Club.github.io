@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../pages.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html" style="text-decoration: none; color: inherit;">
+            <h1>Coding Club Repository</h1>
+        </a>
+    </header>
+
+    <main>
+        <section>
+            <a href="https://github.com/Melted-Coding-Club/4.1-Tetris" target="_blank">
+                <h2>Project 4.1: Tetris</h2>
+            </a>
+        </section>
+
+        <section>
+            <h3>Objective</h3>
+            <p>Create a simplified version of the classic game Tetris using Python and `pygame`.</p>
+        </section>
+
+        <section>
+            <h3>Requirements:</h3>
+            <ul>
+                <li>Implement a 10x20 grid for gameplay.</li>
+                <li>Randomly generate tetrominoes (Tetris pieces) that fall from the top.</li>
+                <li>Allow players to move and rotate pieces using keyboard input.</li>
+                <li>Clear completed lines and update the score accordingly.</li>
+                <li>End the game when the pieces stack to the top of the grid.</li>
+            </ul>
+            <img src="tetris.gif" alt="Animated screenshot of Tetris game" width="400" height="400">
+        </section>
+
+        <section>
+            <h3>Tools & Skills:</h3>
+            <p>Python, `pygame`, game loops, collision detection, keyboard input handling, grid-based logic.</p>
+        </section>
+
+        <section>
+            <h3>Logic Flow:</h3>
+            <ol>
+                <li>Define the grid and tetromino shapes.</li>
+                <li>Spawn a random tetromino at the top of the grid.</li>
+                <li>Move the tetromino down at regular intervals.</li>
+                <li>Detect collisions with the grid or other pieces.</li>
+                <li>Allow user input for moving and rotating tetrominoes.</li>
+                <li>Clear full lines and update the score.</li>
+                <li>End the game if the stack reaches the top.</li>
+                <li>At least 1 "Next Piece" should be visible.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Extra Features (Optional):</h3>
+            <ul>
+                <li>Add guides to make it more obvious where the tetromino will land,</li>
+                <li>Or introduce a ghost tetromino to show where the current piece will land.</li>
+                <li>Add different difficulty levels by increasing speed over time.</li>
+                <li>Implement a hold piece mechanic.</li>
+                <li>Include a leaderboard to track high scores. (Store info in a text file)</li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="button-nav">
+        <button class="nav-button" onclick="location.href='../3.3-Paperio/overview.html'">⬅ Previous Project</button>
+        <button class="nav-button" onclick="window.open('https://github.com/Melted-Coding-Club/4.1-Tetris')">⬆ View on GitHub</button>
+        <button class="nav-button" onclick="location.href='/overview.html'">➡ Next Project (WIP)</button>
+    </div>
+</body>
+</html>

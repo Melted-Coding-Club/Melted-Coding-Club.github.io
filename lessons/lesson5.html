@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Club - Dictionaries and Pygame Introduction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages.css">
+</head>
+
+<body>
+<header>
+    <a href="../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <h2>Lesson 5 - Dictionaries</h2>
+
+    <section>
+        <h3>What is a Dictionary?</h3>
+        <p>
+            A dictionary is a collection of key-value pairs. Each key is unique and is used to access its corresponding value.
+            Dictionaries are mutable, which means you can change them after creation.
+        </p>
+        <p>
+            In Python, dictionaries are defined using curly braces <code>{}</code>, with each key-value pair separated by a colon <code>:</code>.
+        </p>
+        <p>Example:</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2
+</div>
+<code class="code-content">
+<span class="variable">student</span> = <span class="datatype">{"name": "John", "age": 25, "is_student": True}</span>
+<span class="function">print</span>(<span class="variable">student</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>{'name': 'John', 'age': 25, 'is_student': True}</code></p>
+    </section>
+
+    <section>
+        <h3>Accessing and Modifying Dictionaries</h3>
+        <p>
+            You can access the value of a specific key using square brackets <code>[]</code> or the <span class="function">.get()</span> method.
+        </p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2
+</div>
+<code class="code-content">
+<span class="variable">name</span> = <span class="variable">student</span>[<span class="datatype">"name"</span>]
+<span class="function">print</span>(<span class="variable">name</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>John</code></p>
+        <p>You can also modify values or add new key-value pairs:</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3
+</div>
+<code class="code-content">
+<span class="variable">student</span>[<span class="datatype">"age"</span>] = <span class="datatype">26</span>
+<span class="variable">student</span>[<span class="datatype">"grade"</span>] = <span class="datatype">"A"</span>
+<span class="function">print</span>(<span class="variable">student</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>{'name': 'John', 'age': 26, 'is_student': True, 'grade': 'A'}</code></p>
+    </section>
+</main>
+
+<div class="button-nav">
+    <button class="nav-button" onclick="location.href='lesson4.html'">⬅ Previous Lesson</button>
+    <button class="nav-button" onclick="location.href='../projects/1.2-Tic-Tac-Toe/overview.html'">🛠 Relevant Project - 1b</button>
+    <button class="nav-button" onclick="location.href='lesson6.html'">➡ Next Lesson</button>
+</div>
+
+<script src="../scripts/copy-code.js"></script>
+</body>
+</html>

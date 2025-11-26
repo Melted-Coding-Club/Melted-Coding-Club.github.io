@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club - Guess the Number Step 2</title>
+    <link rel="stylesheet" href="../../pages.css">
+</head>
+<body>
+<header>
+    <a href="../../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <section>
+        <a href="https://github.com/Melted-Coding-Club/1a-Guess-the-Number/tree/main/Step%202" target="_blank">
+            <h2>Project 1a: Guess the Number</h2>
+        </a>
+    </section>
+
+    <section>
+        <h3>Step 2 - Generating a Random Number</h3>
+        <ul>
+            <li>
+                In this step, we generate a random number within a specified range using the random library
+                and the <code>randint</code> function that it contains.
+            </li>
+            <li>
+                When you install Python, a standard library is automatically included, so you can immediately use
+                libraries like random, math, os, and many others without needing to install them separately.
+            </li>
+            <li>This means we do not need to install random, only import it</li>
+            <li>Libraries contain functions, to access them we call the name of the library and then the function seperated by periods (.).</li>
+        </ul>
+
+        <pre class="code-container">
+            <code>
+<span class="line-number">1</span> <span class="function">import</span> <span class="variable">random</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span> <span class="variable">number</span> = <span class="function">random.randint</span>(<span class="datatype">0</span>, <span class="datatype">100</span>)
+<span class="line-number">4</span> <span class="function">print</span>(<span class="variable">number</span>)
+<span class="line-number">5</span>
+<span class="line-number">6</span> <span class="variable">userInput</span> = <span class="function">int</span>(<span class="function">input</span>(<span class="datatype">"Enter a number between 0 and 100: "</span>))
+<span class="line-number">7</span> <span class="function">print</span>(<span class="variable">userInput</span>)
+            </code>
+        </pre>
+    </section>
+</main>
+
+<div class="button-nav">
+    <button class="nav-button" onclick="location.href='step1.html'">⬅ Previous Step</button>
+    <button class="nav-button" onclick="location.href='guide.html'">⬆ Show step-by-step Guide</button>
+    <button class="nav-button" onclick="location.href='step3.html'">➡ Next Step</button>
+</div>
+</body>
+</html>

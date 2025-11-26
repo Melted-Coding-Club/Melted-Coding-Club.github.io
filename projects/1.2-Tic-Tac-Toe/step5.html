@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Club - Tic-Tac-Toe Step 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../pages.css">
+</head>
+<body>
+<header>
+    <a href="../../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <section>
+        <a href="https://github.com/Melted-Coding-Club/1b-TicTacToe" target="_blank">
+            <h2>Project 1b: Tic Tac Toe</h2>
+        </a>
+    </section>
+
+    <section>
+        <h3>Step 5 - Input Conversion: Numbers to Coordinates</h3>
+        <ul>
+            <li>In this step, we add the functionality to allow players to input either a number (1-9) or a coordinate (e.g., a1, b2) to choose their square.</li>
+            <li>The code checks if the input is a valid number (1-9). If not, it checks if it matches a coordinate (e.g., a1, b2, etc.).</li>
+            <li>If the input is a coordinate, it is converted to the corresponding number (e.g., a1 becomes 1, b2 becomes 5, etc.).</li>
+            <li>If the input is invalid, an error message is displayed, and the user is prompted to enter a valid input.</li>
+        </ul>
+
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50<br>51<br>52<br>53<br>54
+</div>
+<code class="code-content">
+board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+
+def print_board(board):
+    print(f' {board[0]} | {board[1]} | {board[2]} ')
+    print('---|---|---')
+    print(f' {board[3]} | {board[4]} | {board[5]} ')
+    print('---|---|---')
+    print(f' {board[6]} | {board[7]} | {board[8]} ')
+
+current_player = 0
+player_symbols = ['x', 'o']
+print_board(board)
+
+while True:
+    user_input = input("Choose your square: ").lower()
+    if user_input not in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:
+        if user_input not in ['a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3']:
+            print("Invalid input")
+            continue
+
+        if user_input[0] == 'a':
+            user_input = int(user_input[1]) + 0
+        elif user_input[0] == 'b':
+            user_input = int(user_input[1]) + 3
+        elif user_input[0] == 'c':
+            user_input = int(user_input[1]) + 6
+
+    if board[int(user_input) - 1] == ' ':
+        board[int(user_input) - 1] = player_symbols[current_player]
+    else:
+        print("Slot already filled")
+        continue
+
+    if (
+        board[0] == board[1] == board[2] != ' '  # Top row
+        or board[3] == board[4] == board[5] != ' '  # Middle row
+        or board[6] == board[7] == board[8] != ' '  # Bottom row
+
+        or board[0] == board[3] == board[6] != ' '  # Left column
+        or board[1] == board[4] == board[7] != ' '  # Middle column
+        or board[2] == board[5] == board[8] != ' '  # Right column
+
+        or board[0] == board[4] == board[8] != ' '  # Left-top to right-bottom diagonal
+        or board[2] == board[4] == board[6] != ' '  # Right-top to left-bottom diagonal
+    ):
+        print_board(board)
+        print(f"player {player_symbols[current_player]} won")
+        break
+
+    if current_player == 0:
+        current_player = 1
+    elif current_player == 1:
+        current_player = 0
+    print_board(board)
+                </code>
+            </pre>
+        </div>
+    </section>
+</main>
+
+<div class="button-nav">
+    <button class="nav-button" onclick="location.href='step4.html'">⬅ Previous Step</button>
+    <button class="nav-button" onclick="location.href='guide.html'">⬆ Show step-by-step Guide</button>
+    <button class="nav-button" onclick="location.href='step6.html'">➡ Next Step</button>
+</div>
+
+</body>
+</html>

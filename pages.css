@@ -1,0 +1,195 @@
+/* Make code more readable */
+.code-container {
+    position: relative;
+    font-family: monospace;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    display: flex;
+}
+.line-numbers {
+    padding-right: 10px;
+    text-align: right;
+    user-select: none;
+    color: #888;
+}
+.code-content {
+    flex: 1;
+}
+.copy-btn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 40px;
+    box-shadow: none;
+    z-index: 10; /* Ensures the button is always on top */
+}
+.copy-btn:hover {
+    background: #21a1f1;
+    transform: scale(1.1);
+}
+.code-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Colors the code */
+.variable { color: red; }
+.datatype { color: purple; }
+.operator { color: green; }
+.statement { color: blue; }
+.comment { color: gray; }
+.function { color: orange; }
+
+
+main {
+    margin-bottom: 40px; /* matches footer thickness */
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to right, #e7e7fb, #b4f7ff);
+    color: #333;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 40px;
+}
+
+/* Style the main heading */
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 60px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1.5px;
+}
+
+/* Style the sub-heading */
+
+h2 {
+    color: #34495e;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #34495e;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+span {
+    margin-left: 0px;
+}
+
+ul {
+    margin-left: 10px;
+}
+
+/* Base Button Styling */
+button {
+    bottom: 20px;
+    padding: 12px 24px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Grid Layout for Buttons */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Grid Button Styling */
+.grid-button {
+    background: linear-gradient(135deg, #8BC34A, #689F38);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Bottom Navigation Bar */
+.button-nav {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #00e0ff, #45d33c);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensures it's always on top */
+    border: 2px solid #2e2e2e;
+    border-radius: 8px;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    background: linear-gradient(135deg, #4CAF50, #0b710f);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+}
+
+/* Hover Effect */
+.nav-button:hover {
+    transform: scale(1.1);
+    color: #171313; /* Light teal on hover */
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 600px) {
+    .button-nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-button {
+        font-size: 16px;
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../pages.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html" style="text-decoration: none; color: inherit;">
+            <h1>Coding Club Repository</h1>
+        </a>
+    </header>
+
+    <main>
+        <section>
+            <a href="https://github.com/Melted-Coding-Club/3.3-Paper-io" target="_blank">
+                <h2>Project 3.3: Paper.io</h2>
+            </a>
+        </section>
+
+        <section>
+            <h3>Objective</h3>
+            <p>Create a simplified version of the popular game Paper.io using Python and `pygame`.</p>
+        </section>
+
+        <section>
+            <h3>Requirements:</h3>
+            <ul>
+                <li>Players control a square that moves in four directions.</li>
+                <li>Leaving a trail behind creates a new territory when a loop is completed.</li>
+                <li>Players lose if an opponent or themselves cross their trail before it is closed.</li>
+                <li>The game should display a score based on the player's territory size.</li>
+                <li>Implement basic enemy AI to add competition.</li>
+            </ul>
+            <img src="paper-io.gif" alt="Animated screenshot of Paper.io game" width="400" height="400">
+        </section>
+
+        <section>
+            <h3>Tools & Skills:</h3>
+            <p>Python, `pygame`, game loops, collision detection, keyboard input handling.</p>
+        </section>
+
+        <section>
+            <h3>Logic Flow:</h3>
+            <ol>
+                <li>Initialize `pygame` and create the game window.</li>
+                <li>Draw the player, trails, and captured territory.</li>
+                <li>Detect player input and move accordingly.</li>
+                <li>Track the player's trail and check for completed loops.</li>
+                <li>Detect collisions with enemies, self-trails, or boundaries.</li>
+                <li>Update the score based on captured area.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Extra Features (Optional):</h3>
+            <ul>
+                <li>Add different enemy AI difficulty levels.</li>
+                <li>Implement power-ups for temporary speed boosts or invincibility.</li>
+                <li>Introduce different map layouts or obstacles.</li>
+                <li>Allow multiplayer functionality.</li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="button-nav">
+        <button class="nav-button" onclick="location.href='../3.2-Snake-OOP/overview.html'">⬅ Previous Project (3.2)</button>
+        <button class="nav-button" onclick="window.open('https://github.com/Melted-Coding-Club/3.3-paperio')">⬆ View on GitHub</button>
+        <button class="nav-button" onclick="location.href='../4.1-Tetris/overview.html'">➡ Next Project (6-Tetris)</button>
+    </div>
+</body>
+</html>

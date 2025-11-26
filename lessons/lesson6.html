@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Club - Moving Objects in Pygame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages.css">
+</head>
+
+<body>
+<header>
+    <a href="../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <h2>Lesson 6 - Introduction to Pygame</h2>
+    <section>
+        <h3>Introduction to Pygame</h3>
+        <p>
+            <span class="datatype">Pygame</span> is an external library used to create games and multimedia applications in Python.
+            It provides functionalities for graphics, sound, and input handling.
+        </p>
+        <p>To start using Pygame, you need to import the module and initialize it:</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2
+</div>
+<code class="code-content">
+<span class="statement">import</span> <span class="function">pygame</span>
+<span class="function">pygame.init</span>()
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h3>Creating a Window in Pygame</h3>
+        <p>
+            In Pygame, you can create a window using the <span class="function">pygame.display.set_mode()</span> function.
+        </p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2
+</div>
+<code class="code-content">
+<span class="variable">screen</span> = <span class="function">pygame.display.set_mode</span>(<span class="datatype">(800, 600)</span>)
+<span class="function">pygame.display.set_caption</span>(<span class="datatype">"My First Game"</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This creates a window with a width of 800 pixels and height of 600 pixels, titled "My First Game".</p>
+    </section>
+
+    <section>
+        <h3>Event Handling in Pygame</h3>
+        <p>
+            To keep the window open and responsive, you need to handle events.
+            The main game loop checks for events such as closing the window.
+        </p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6
+</div>
+<code class="code-content">
+<span class="statement">while</span> <span class="datatype">True</span>:
+     <span class="variable">events</span> = <span class="function">pygame.event.get</span>()
+     <span class="statement">for</span> <span class="variable">event</span> <span class="statement">in</span> <span class="variable">events</span>:
+         <span class="statement">if</span> <span class="variable">event.type</span> == <span class="function">pygame.QUIT</span>:
+             <span class="function">pygame.quit</span>()
+             <span class="statement">exit</span>()
+                </code>
+            </pre>
+        </div>
+        <p>This keeps the window open until the user closes it.</p>
+    </section>
+</main>
+
+<div class="button-nav">
+    <button class="nav-button" onclick="location.href='lesson5.html'">⬅ Previous Lesson</button>
+    <button class="nav-button" onclick="location.href='lesson7.html'">➡ Next Lesson</button>
+</div>
+
+<script src="../scripts/copy-code.js"></script>
+</body>
+</html>

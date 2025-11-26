@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club - Guess the Number Step 1</title>
+    <link rel="stylesheet" href="../../pages.css">
+</head>
+<body>
+<header>
+    <a href="../../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <section>
+        <a href="https://github.com/Melted-Coding-Club/1a-Guess-the-Number/tree/main/Step%201" target="_blank">
+            <h2>Project 1a: Guess the Number</h2>
+        </a>
+    </section>
+
+    <section>
+        <h3>Step 1 - User Input</h3>
+        <ul>
+            <li>We can use the inbuilt <code>input()</code> function to request an input from the user within the terminal.</li>
+            <li>We can then print this value back to the user using the inbuilt <code>print()</code> function.</li>
+            <li>The <code>input()</code> function returns a string, so we must convert it to an integer using the <code>int()</code> function.</li>
+            <li>We can provide the <code>input()</code> function with a prompt to guide the user on what they should enter.</li>
+        </ul>
+
+        <pre class="code-container">
+            <code>
+<span class="line-number">1</span>
+<span class="line-number">2</span> <span class="variable">userInput</span> = <span class="function">int</span>(<span class="function">input</span>(<span class="datatype">"Enter a number between 0 and 100: "</span>))
+<span class="line-number">3</span> <span class="function">print</span>(<span class="variable">userInput</span>)
+<span class="line-number">4</span>
+            </code>
+        </pre>
+        <p>This would output whatever the user inputs.</p>
+    </section>
+</main>
+
+<div class="button-nav">
+    <button class="nav-button" onclick="location.href='overview.html'">Back to Overview</button>
+    <button class="nav-button" onclick="location.href='guide.html'">⬆ Show step-by-step Guide</button>
+    <button class="nav-button" onclick="location.href='step2.html'">➡ Next Step</button>
+</div>
+</body>
+</html>

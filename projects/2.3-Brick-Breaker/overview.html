@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../pages.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html" style="text-decoration: none; color: inherit;">
+            <h1>Coding Club Repository</h1>
+        </a>
+    </header>
+
+    <main>
+        <section>
+            <a href="https://github.com/Melted-Coding-Club/2.3-Brick-Breaker" target="_blank">
+                <h2>Project 2.3: Brick Breaker</h2>
+            </a>
+        </section>
+
+        <section>
+            <h3>Objective</h3>
+            <p>Build a Brick Breaker (Breakout-style) game using Python and `pygame`.</p>
+        </section>
+
+        <section>
+            <h3>Requirements:</h3>
+            <ul>
+                <li>Display a paddle that the player can move left and right using arrow keys or A/D.</li>
+                <li>Launch a bouncing ball that breaks bricks on contact.</li>
+                <li>Lay out multiple rows of bricks at the top of the screen.</li>
+                <li>Detect collisions between the ball, bricks, paddle, and screen edges.</li>
+                <li>Remove bricks when hit by the ball.</li>
+                <li>End the game when the ball falls below the paddle.</li>
+                <li>Track and display the player's score.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Tools & Skills:</h3>
+            <p>Python, `pygame`, object-oriented programming (classes), collision detection, game loops, user input handling.</p>
+        </section>
+
+        <section>
+            <h3>Logic Flow:</h3>
+            <ol>
+                <li>Initialize `pygame` and create the game window.</li>
+                <li>Create a `Paddle` class to handle player movement and drawing.</li>
+                <li>Create a `Ball` class that handles movement and bouncing.</li>
+                <li>Create a `Brick` class, and generate a grid of bricks at the top.</li>
+                <li>Move the ball each frame and check for collisions with walls, paddle, and bricks.</li>
+                <li>Destroy bricks on contact and increase the score.</li>
+                <li>End the game if the ball goes off the bottom of the screen.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Extra Features (Optional, not included in GitHub solution):</h3>
+            <ul>
+                <li>Make the ball bounce at different angles based on where it hits the paddle.</li>
+                <li>Add lives or a "Game Over" screen.</li>
+                <li>Include sound effects and music.</li>
+                <li>Power-ups like multi-ball, paddle size increase, or slow motion.</li>
+                <li>Add multiple levels with different brick layouts.</li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="button-nav">
+        <button class="nav-button" onclick="location.href='../2.2-Pong-OOP/overview.html'">⬅ Previous Project (2.1)</button>
+        <button class="nav-button" onclick="window.open('https://github.com/Melted-Coding-Club/2.3-Brick-Breaker')">⬆ View on GitHub</button>
+        <button class="nav-button" onclick="location.href='../3.1-Snake/overview.html'">➡ Next Project (3.1)</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club - Python Glossary</title>
+    <link rel="stylesheet" href="../pages.css">
+    <style>
+        /* Style for definition list */
+        .glossary {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            position: relative;
+            background-color: #85d378;
+            padding: 15px;
+            border-radius:20px;
+        }
+
+        .glossary-item {
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* Hover effect for each glossary item */
+        .glossary-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .definition {
+            margin-top: 10px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+            width: 220px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <a href="../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <h2>Glossary</h2>
+
+    <section>
+        <h3>Programming</h3>
+        <ul class="glossary">
+            <li class="glossary-item">
+                Coding vs. Programming
+                <span class="definition">
+                    <strong>Coding</strong> is the act of writing instructions in a programming language, focusing on syntax and implementation.
+                    <strong>Programming</strong> is a broader process that involves planning, designing, testing, and maintaining software solutions.
+                    In short, coding is a part of programming.
+                    <a href="https://www.freecodecamp.org/news/coding-vs-programming-key-differences/" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                IDE
+                <span class="definition">
+                An Integrated Development Environment (IDE) is a software application that provides comprehensive tools for software development, including a code editor, debugger, and build automation.
+                Popular Python IDEs include PyCharm and VSCode.
+                <a href="https://en.wikipedia.org/wiki/Integrated_development_environment" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Runtime
+                <span class="definition">
+                Runtime is the period during which a program is running.
+                It refers to the environment in which a program is executed, including memory allocation and system resources.
+                <a href="https://en.wikipedia.org/wiki/Runtime_system" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Compiler
+                <span class="definition">
+                A compiler is a program that translates source code from a high-level programming language to a lower-level language (e.g., machine code).
+                This conversion happens before execution.
+                <a href="https://www.geeksforgeeks.org/compiler-design/" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Interpreter
+                <span class="definition">
+                An interpreter directly executes instructions written in a programming or scripting language without requiring them to be compiled into machine code.
+                Python is an interpreted language.
+                <a href="https://www.tutorialspoint.com/difference-between-compiler-and-interpreter" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Syntax
+                <span class="definition">
+                Syntax refers to the set of rules that define the structure of a programming language.
+                It specifies how keywords, operators, and symbols can be combined to create valid statements.
+                <a href="https://www.computerhope.com/jargon/s/syntax.htm" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Algorithm
+                <span class="definition">
+                An algorithm is a step-by-step procedure for solving a problem or performing a computation.
+                It is a sequence of instructions that are followed to achieve a desired outcome.
+                <a href="https://www.programiz.com/dsa/algorithm" target="_blank">Read more</a>
+                </span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Coding</h3>
+        <ul class="glossary">
+            <li class="glossary-item">
+                Variable
+                <span class="definition">
+                A storage location paired with a name for holding data.
+                In Python, variables are dynamically typed, meaning they can change type.
+                <a href="https://www.w3schools.com/python/python_variables.asp" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Function
+                <span class="definition">
+                A block of reusable code that performs a specific task.
+                Functions can have parameters and return values.
+                <a href="https://www.programiz.com/python-programming/function" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Loop
+                <span class="definition">
+                A sequence of instructions that repeats until a condition is met.
+                Python supports <code>for</code> and <code>while</code> loops.
+                <a href="https://www.geeksforgeeks.org/loops-in-python/" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                List
+                <span class="definition">
+                An ordered collection of items, which can be of different types.
+                Lists are mutable, meaning they can be modified after creation.
+                <a href="https://realpython.com/python-lists-tuples/" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Dictionary
+                <span class="definition">
+                A collection of key-value pairs, similar to a real-world dictionary.
+                Keys must be unique and immutable, while values can be of any type.
+                <a href="https://www.w3schools.com/python/python_dictionaries.asp" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Module
+                <span class="definition">
+                A file containing Python code, which can include functions and variables.
+                Modules allow you to organize and reuse code across multiple programs.
+                <a href="https://docs.python.org/3/tutorial/modules.html" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Class
+                <span class="definition">
+                A blueprint for creating objects. It defines attributes (data) and methods (functions).
+                Classes enable Object-Oriented Programming in Python.
+                <a href="https://www.programiz.com/python-programming/class" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Exception
+                <span class="definition">
+                An error that occurs during program execution, disrupting the normal flow.
+                Python uses <code>try</code> and <code>except</code> blocks for exception handling.
+                <a href="https://realpython.com/python-exceptions/" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Lambda
+                <span class="definition">
+                An anonymous function defined using the <code>lambda</code> keyword.
+                It can have multiple arguments but only one expression.
+                <a href="https://www.w3schools.com/python/python_lambda.asp" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Import
+                <span class="definition">
+                A statement used to include external modules or libraries in a Python script.
+                This allows for code reuse and organization.
+                <a href="https://docs.python.org/3/reference/import.html" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Decorator
+                <span class="definition">
+                A function that wraps another function, enhancing or modifying its behavior.
+                Decorators are widely used for logging, authentication, and more.
+                <a href="https://realpython.com/primer-on-python-decorators/" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Iterable
+                <span class="definition">
+                An object capable of returning its elements one at a time, allowing it to be looped over.
+                Examples include lists, tuples, and dictionaries.
+                <a href="https://www.geeksforgeeks.org/python-iterables-vs-iterator/" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                Recursion
+                <span class="definition">
+                A function that calls itself in order to solve smaller instances of the same problem.
+                Recursion is useful for problems like factorial and Fibonacci sequences.
+                <a href="https://www.programiz.com/python-programming/recursion" target="_blank">Read more</a>
+                </span>
+            </li>
+            <li class="glossary-item">
+                List Comprehension
+                <span class="definition">
+                A concise way to create lists using a single line of code.
+                It is generally faster and more readable than using traditional loops.
+                <a href="https://realpython.com/list-comprehension-python/" target="_blank">Read more</a>
+                </span>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 MeltedButter77</p>
+</footer>
+
+<script>
+    // JavaScript to toggle definitions
+    const glossaryItems = document.querySelectorAll('.glossary-item');
+
+    glossaryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Close all other definitions
+            glossaryItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.querySelector('.definition').style.display = 'none';
+                }
+            });
+
+            // Toggle the clicked definition
+            const definition = item.querySelector('.definition');
+            if (definition.style.display === 'block') {
+                definition.style.display = 'none';
+            } else {
+                definition.style.display = 'block';
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club - Introduction to Python</title>
+    <link rel="stylesheet" href="../pages.css">
+</head>
+
+<body>
+<header>
+    <a href="../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <h2>Lesson 1 - Introduction to Python</h2>
+
+    <section>
+        <h3>What is Python?</h3>
+        <p>
+            Python is a programming language used to create scripts and applications.
+            It is one of the most popular programming languages today because of its simplicity, readability, and strong community support.
+            Python allows developers to focus on solving problems rather than complex syntax, making it an excellent choice for beginners and professionals alike.
+        </p>
+
+        <p>
+            Python is an interpreted language, meaning code is executed line by line.
+            This makes it easier to debug and experiment, allowing programmers to see the results of their code quickly.
+            Python's ecosystem includes a vast collection of libraries for web development, data science, artificial intelligence, automation, and more.
+        </p>
+
+        <p>
+            Although Python may not be the fastest language in execution speed, its ease of use, rapid development capabilities, and strong community support outweigh these drawbacks.
+            Most importantly, learning Python builds problem-solving skills essential for programming in any language.
+        </p>
+    </section>
+
+    <section>
+        <h3>Data Types</h3>
+        <p>Data types are different ways to store data in Python. These are the most common data types:</p>
+        <ul>
+            <li><span class="datatype">Integers</span>, like <code>1</code> or <code>5432</code></li>
+            <li><span class="datatype">Floats</span>, like <code>3.12</code> or <code>870.23342</code></li>
+            <li><span class="datatype">Strings</span>, like <code>"John"</code> or <code>"hello world"</code></li>
+            <li><span class="datatype">Booleans</span>, like <code>True</code> or <code>False</code></li>
+            <li><span class="datatype">Lists</span>, like <code>[1, 2, 3]</code></li>
+            <li><span class="datatype">Dictionaries</span>, like <code>{"name": "John", "age": 30}</code></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Variables</h3>
+        <p>
+            Variables are used to store data values in Python. They can hold values of any type.
+            A variable is created by assigning a value to a name using the assignment operator <code>=</code>.
+        </p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3
+</div>
+<code class="code-content">
+<span class="variable">name</span> = <span class="datatype">"Alice"</span>
+<span class="variable">age</span> = <span class="datatype">25</span>
+<span class="variable">is_student</span> = <span class="datatype">True</span>
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h3>Operators</h3>
+        <p>Operators perform operations on variables and values. The most common operators are:</p>
+        <ul>
+            <li><span class="operator">Arithmetic Operators</span>, like <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li>
+            <li><span class="operator">Comparison Operators</span>, like <code>==</code>, <code>!=</code>, <code>></code>, <code><</code></li>
+            <li><span class="operator">Logical Operators</span>, like <code>and</code>, <code>or</code>, <code>not</code></li>
+            <li><span class="operator">Assignment Operators</span>, like <code>=</code>, <code>+=</code>, <code>-=</code></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Statements</h3>
+        <p>Statements perform actions. Common statements include:</p>
+        <ul>
+            <li><span class="statement">Conditional Statements</span>, like <code>if</code>, <code>elif</code>, <code>else</code></li>
+            <li><span class="statement">Loop Statements</span>, like <code>for</code>, <code>while</code></li>
+            <li><span class="statement">Exception Handling</span>, like <code>try</code>, <code>except</code>, <code>finally</code></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Example</h3>
+        <p>Variables are <span class="variable">Red</span></p>
+        <p>Data Types are <span class="datatype">Purple</span></p>
+        <p>Operators are <span class="operator">Green</span></p>
+        <p>Statements are <span class="statement">Blue</span></p>
+        <p>Functions are <span class="function">Orange</span></p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27
+</div>
+<code class="code-content">
+<span class="comment"># Define some variables</span>
+<span class="variable">name</span> = <span class="datatype">"Alice"</span>  <span class="comment"># String variable</span>
+<span class="variable">age</span> = <span class="datatype">25</span>  <span class="comment"># Integer variable</span>
+<span class="variable">height</span> = <span class="datatype">5.6</span>  <span class="comment"># Float variable</span>
+<span class="variable">is_student</span> = <span class="datatype">True</span>  <span class="comment"># Boolean variable</span>
+
+<span class="comment"># Perform arithmetic operation</span>
+<span class="variable">next_year_age</span> = <span class="variable">age</span> <span class="operator">+</span> <span class="datatype">1</span>
+
+<span class="comment"># Conditional statement</span>
+<span class="statement">if</span> <span class="variable">age</span> <span class="operator">>=</span> <span class="datatype">18</span>:
+    <span class="function">print</span>(<span class="datatype">"You are an adult."</span>)
+<span class="statement">else</span>:
+   <span class="function">print</span>(<span class="datatype">"You are a minor."</span>)
+
+<span class="comment"># Loop through a list</span>
+<span class="variable">numbers</span> = <span class="datatype">[1, 2, 3, 4, 5]</span>
+
+<span class="statement">for</span> <span class="variable">num</span> <span class="statement">in</span> <span class="variable">numbers</span>:
+    <span class="function">print</span>(<span class="datatype">f"Number: {num}"</span>)
+
+<span class="comment"># Define a function</span>
+<span class="statement">def</span> <span class="function">greet</span>(<span class="variable">person</span>):
+    <span class="function">print</span>(<span class="datatype">f"Hello, {person}!"</span>)
+
+<span class="comment"># Call the function</span>
+<span class="function">greet</span>(<span class="variable">name</span>)
+                </code>
+            </pre>
+        </div>
+    </section>
+</main>
+
+<div class="button-nav">
+    <button class="nav-button" onclick="location.href='../index.html'">🏠 Home</button>
+    <button class="nav-button" onclick="location.href='lesson2.html'">➡ Next Lesson</button>
+</div>
+
+<script src="../scripts/copy-code.js"></script>
+</body>
+</html>

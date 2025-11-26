@@ -1,0 +1,98 @@
+/* Apply a modern gradient background with a soft texture */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to right, #e7e7fb, #b4f7ff);
+    color: #333;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 40px;
+}
+
+/* Style the main heading with a bold look */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 60px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1.5px;
+}
+
+/* Style the sub-heading */
+h2 {
+    color: #34495e;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the unordered list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Style list items */
+li {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* Style buttons with a modern 3D look */
+button {
+    padding: 14px 28px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px; /* Slightly larger font */
+    font-weight: 600; /* Make the text bolder */
+    background: linear-gradient(135deg, #3498db, #1c6ea4);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+    text-transform: none; /* Remove uppercase transformation */
+}
+
+/* Button Hover Animation */
+button:hover {
+    background: linear-gradient(135deg, #1c6ea4, #145a82);
+    transform: translateY(-3px) scale(1.07);
+    box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Click Effect */
+button:active {
+    transform: scale(0.96);
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Accessibility Focus */
+button:focus {
+    outline: 3px solid rgba(52, 152, 219, 0.5);
+    outline-offset: 3px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    button {
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+}

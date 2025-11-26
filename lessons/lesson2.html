@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Club - Functions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages.css">
+</head>
+
+<body>
+<header>
+    <a href="../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <h2>Lesson 2 - Functions</h2>
+
+    <section>
+        <h3>What is a Function?</h3>
+        <p>
+            A function is a block of organized, reusable code that performs a single, related action.
+            Functions help break down code into smaller, manageable parts and avoid repetition.
+        </p>
+        <p>
+            In Python, a function is defined using the <span class="statement">def</span> keyword, followed by the function name and parentheses.
+        </p>
+    </section>
+
+    <section>
+        <h3>Built-in Functions</h3>
+        <p>Python has several built-in functions that you can use straight away, including:</p>
+        <ul>
+            <li><span class="function">print()</span> - Outputs data to the console</li>
+            <li><span class="function">input()</span> - Gets input from the user</li>
+            <li><span class="function">int()</span>, <span class="function">float()</span>, <span class="function">str()</span> - Type conversions</li>
+            <li><span class="function">len()</span> - Returns the length of an item</li>
+            <li><span class="function">append()</span> - Adds an element to a list</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Defining and Calling Functions</h3>
+        <p>
+            You can create your own functions using <span class="statement">def</span>. Here's an example:
+        </p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3<br>4<br>5
+</div>
+<code class="code-content">
+<span class="statement">def</span> <span class="function">greet</span>(<span class="variable">name</span>):
+    <span class="function">print</span>(<span class="datatype">f"Hello, {name}!"</span>)
+
+<span class="comment"># Calling the function</span>
+<span class="function">greet</span>(<span class="datatype">"Alice"</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>Hello, Alice!</code></p>
+    </section>
+
+    <section>
+        <h3>Function Parameters and Arguments</h3>
+        <p>
+            Functions can accept parameters, which are values you pass to the function.
+            These are specified in the parentheses when defining the function.
+        </p>
+        <p>For example:</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3<br>4<br>5
+</div>
+<code class="code-content">
+<span class="statement">def</span> <span class="function">add</span>(<span class="variable">x</span>, <span class="variable">y</span>):
+    <span class="statement">return</span> <span class="variable">x</span> <span class="operator">+</span> <span class="variable">y</span>
+
+<span class="comment"># Calling the function with arguments</span>
+<span class="variable">result</span> = <span class="function">add</span>(<span class="datatype">3</span>, <span class="datatype">4</span>)
+<span class="function">print</span>(<span class="variable">result</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>7</code></p>
+    </section>
+
+    <section>
+        <h3>Return Statements</h3>
+        <p>
+            The <span class="statement">return</span> statement is used to send a result back from a function.
+            This allows you to store the result and use it later in your program.
+        </p>
+        <p>For example:</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3<br>4<br>5
+</div>
+<code class="code-content">
+<span class="statement">def</span> <span class="function">square</span>(<span class="variable">num</span>):
+    <span class="statement">return</span> <span class="variable">num</span> <span class="operator">*</span> <span class="variable">num</span>
+
+<span class="variable">result</span> = <span class="function">square</span>(<span class="datatype">5</span>)
+<span class="function">print</span>(<span class="variable">result</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>25</code></p>
+    </section>
+</main>
+
+<div class="button-nav">
+    <button class="nav-button" onclick="location.href='lesson1.html'">⬅ Previous Lesson</button>
+    <button class="nav-button" onclick="location.href='lesson3.html'">➡ Next Lesson</button>
+</div>
+
+<script src="../scripts/copy-code.js"></script>
+</body>
+</html>

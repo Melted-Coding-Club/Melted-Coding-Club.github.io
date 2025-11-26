@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Club - Tic-Tac-Toe Step 5 to Step 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../pages.css">
+</head>
+<body>
+<header>
+    <a href="../../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <section>
+        <a href="https://github.com/Melted-Coding-Club/1b-TicTacToe" target="_blank">
+            <h2>Project 1b: Tic-Tac-Toe</h2>
+        </a>
+    </section>
+
+    <section>
+        <h3>Step 6 - Using Functions to Encapsulate Logic</h3>
+        <ul>
+            <li>Now that we have our board and players set up, we need to implement input validation to make sure that players choose a valid, unoccupied square.</li>
+            <li>We’ll create a function called <code>is_valid_input()</code> that checks if the player's input corresponds to a valid board position (either a number from 1-9 or a coordinate like "a1", "b2", etc.).</li>
+            <li>If the input is valid, the game will proceed, and the current player's symbol ("x" or "o") will be placed in the corresponding position on the board.</li>
+            <li>If the square is already filled, the game will prompt the player to choose another square.</li>
+            <li>We also add a <code>check_win()</code> function to check if any player has won the game by checking for any winning combination on the board.</li>
+            <li>The game will continue until there’s a winner or all squares are filled (which would result in a draw).</li>
+            <li>After every turn, we switch to the next player by alternating between index 0 and 1 in the <code>player_symbols</code> list.</li>
+        </ul>
+
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50<br>51<br>52<br>53<br>54<br>55<br>56<br>57
+</div>
+<code class="code-content">
+board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']  # Initialize the game board
+player_symbols = ['x', 'o']  # Player symbols
+current_player = 0  # Start with player 0 (x)
+
+def print_board(board):
+    print(f' {board[0]} | {board[1]} | {board[2]} ')
+    print('---|---|---')
+    print(f' {board[3]} | {board[4]} | {board[5]} ')
+    print('---|---|---')
+    print(f' {board[6]} | {board[7]} | {board[8]} ')
+
+def is_valid_input(user_input):
+    """Validates if input is a valid number or coordinate."""
+    return user_input in ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3']
+
+def convert_to_number(user_input):
+    """Converts coordinate input to board index."""
+    if user_input[0] == 'a':
+        return int(user_input[1]) - 1
+    elif user_input[0] == 'b':
+        return int(user_input[1]) + 2
+    elif user_input[0] == 'c':
+        return int(user_input[1]) + 5
+    return int(user_input) - 1
+
+def check_win(board):
+    """Checks if a player has won the game."""
+    winning_combinations = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],  # rows
+        [0, 3, 6], [1, 4, 7], [2, 5, 8],  # columns
+        [0, 4, 8], [2, 4, 6]  # diagonals
+    ]
+    for combo in winning_combinations:
+        if board[combo[0]] == board[combo[1]] == board[combo[2]] != ' ':
+            return True
+    return False
+
+print_board(board)
+while True:
+    user_input = input("Choose your square: ").lower()
+    if not is_valid_input(user_input):
+        print("Invalid input")
+        continue
+    board_position = convert_to_number(user_input)
+    if board[board_position] == ' ':
+        board[board_position] = player_symbols[current_player]
+    else:
+        print("Slot already filled")
+        continue
+
+    if check_win(board):
+        print_board(board)
+        print(f"Player {player_symbols[current_player]} won!")
+        break
+
+    current_player = 1 - current_player  # Switch players
+    print_board(board)
+                </code>
+            </pre>
+        </div>
+
+        <p>This will enable the players to take turns, making moves and checking if any player has won.</p>
+    </section>
+</main>
+
+<div class="button-nav">
+    <button class="nav-button" onclick="location.href='step5.html'">⬅ Previous Step</button>
+    <button class="nav-button" onclick="location.href='guide.html'">⬆ Show step-by-step Guide</button>
+    <button class="nav-button" onclick="location.href='overview.html'">Back to Overview</button>
+</div>
+
+</body>
+</html>

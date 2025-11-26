@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Club - Guess the Number Step 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../pages.css">
+</head>
+<body>
+<header>
+    <a href="../../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <section>
+        <a href="https://github.com/Melted-Coding-Club/1b-TicTacToe" target="_blank">
+            <h2>Project 1b: Tic Tac Toe</h2>
+        </a>
+    </section>
+
+    <section>
+        <h3>Step 1 - Setting Up the Board</h3>
+        <ul>
+            <li>We start by saving the game board as a list of strings. Initially, each position is empty, represented by a space.</li>
+            <li>Each space will later be filled with either "x" or "o" depending on the player's move.</li>
+            <li>Next, we create a function called <code>print_board()</code> to print the game board. This function will make it easier to display the board whenever needed during the game.</li>
+            <li>We use the <code>print()</code> function within <code>print_board()</code> to display the values at the appropriate positions on the board.</li>
+        </ul>
+
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+</div>
+<code class="code-content">
+<span class="variable">board</span> = <span class="datatype">[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']</span>
+
+<span class="statement">def</span> <span class="function">print_board</span>(<span class="variable">board</span>):
+    <span class="function">print</span>(<span class="datatype">f' {</span><span class="variable">board</span>[<span class="datatype">0</span>]<span class="datatype">} | {</span><span class="variable">board</span>[<span class="datatype">1</span>]<span class="datatype">} | {</span><span class="variable">board</span>[<span class="datatype">2</span>]<span class="datatype">} '</span>)
+    <span class="function">print</span>(<span class="datatype">'---|---|---'</span>)
+    <span class="function">print</span>(<span class="datatype">f' {</span><span class="variable">board</span>[<span class="datatype">3</span>]<span class="datatype">} | {</span><span class="variable">board</span>[<span class="datatype">4</span>]<span class="datatype">} | {</span><span class="variable">board</span>[<span class="datatype">5</span>]<span class="datatype">} '</span>)
+    <span class="function">print</span>(<span class="datatype">'---|---|---'</span>)
+    <span class="function">print</span>(<span class="datatype">f' {</span><span class="variable">board</span>[<span class="datatype">6</span>]<span class="datatype">} | {</span><span class="variable">board</span>[<span class="datatype">7</span>]<span class="datatype">} | {</span><span class="variable">board</span>[<span class="datatype">8</span>]<span class="datatype">} '</span>)
+
+<span class="function">print_board</span>(<span class="variable">board</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This will print the initial empty Tic-Tac-Toe board:</p>
+        <pre class="code-container">
+            <code>
+       |   |
+    ---|---|---
+       |   |
+    ---|---|---
+       |   |
+            </code>
+        </pre>
+        <p>You can try changing the board values to "x" or "o" to see how the board changes like so.</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2
+</div>
+<code class="code-content">
+<span class="variable">board</span> = <span class="datatype">['x', 'x', 'o', 'x', ' ', ' ', 'x', ' ', 'o']</span>
+<span class="comment"># Rest of the code here</span>
+                </code>
+            </pre>
+        </div>
+        <p>This board setup will output this:</p>
+        <pre class="code-container">
+            <code>
+     x | x | o
+    ---|---|---
+     x |   |
+    ---|---|---
+     x |   | o
+            </code>
+        </pre>
+    </section>
+</main>
+
+<div class="button-nav">
+    <button class="nav-button" onclick="location.href='overview.html'">Back to Overview</button>
+    <button class="nav-button" onclick="location.href='guide.html'">⬆ Show step-by-step Guide</button>
+    <button class="nav-button" onclick="location.href='step2.html'">➡ Next Step</button>
+</div>
+
+</body>
+</html>

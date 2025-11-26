@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Club - Lists and Tuples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages.css">
+</head>
+
+<body>
+<header>
+    <a href="../index.html" style="text-decoration: none; color: inherit;">
+        <h1>Coding Club Repository</h1>
+    </a>
+</header>
+
+<main>
+    <h2>Lesson 4 - Lists and Tuples</h2>
+
+    <section>
+        <h3>What are Lists?</h3>
+        <p>
+            A list is a collection of items in a particular order. Lists are mutable, meaning they can be changed after creation.
+            In Python, lists are defined using square brackets <code>[]</code> and items are separated by commas.
+        </p>
+        <p>Example:</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2
+</div>
+<code class="code-content">
+<span class="variable">fruits</span> = <span class="datatype">["apple", "banana", "cherry"]</span>
+<span class="function">print</span>(<span class="variable">fruits</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>['apple', 'banana', 'cherry']</code></p>
+    </section>
+
+    <section>
+        <h3>Accessing List Elements</h3>
+        <p>
+            You can access elements in a list by their index. Remember, Python uses zero-based indexing, so the first item is at index <code>0</code>.
+        </p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2
+</div>
+<code class="code-content">
+<span class="variable">first_fruit</span> = <span class="variable">fruits</span>[<span class="datatype">0</span>]
+<span class="function">print</span>(<span class="variable">first_fruit</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>apple</code></p>
+    </section>
+
+    <section>
+        <h3>Modifying Lists</h3>
+        <p>
+            Lists are mutable, so you can change their contents after creation. You can:
+        </p>
+        <ul>
+            <li>Change an element's value</li>
+            <li>Add elements using <span class="function">.append()</span> or <span class="function">.insert()</span></li>
+            <li>Remove elements using <span class="function">.remove()</span> or <span class="function">.pop()</span></li>
+        </ul>
+        <p>Example:</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2
+</div>
+<code class="code-content">
+<span class="variable">fruits</span>.<span class="function">append</span>(<span class="datatype">"orange"</span>)
+<span class="function">print</span>(<span class="variable">fruits</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>['apple', 'banana', 'cherry', 'orange']</code></p>
+    </section>
+
+    <section>
+        <h3>What are Tuples?</h3>
+        <p>
+            A tuple is similar to a list, but it is immutable, meaning it cannot be changed after creation.
+            Tuples are defined using parentheses <code>()</code> instead of square brackets.
+        </p>
+        <p>Example:</p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2
+</div>
+<code class="code-content">
+<span class="variable">coordinates</span> = <span class="datatype">(10, 20)</span>
+<span class="function">print</span>(<span class="variable">coordinates</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>(10, 20)</code></p>
+    </section>
+
+    <section>
+        <h3>Accessing Tuple Elements</h3>
+        <p>
+            Just like lists, you can access tuple elements using indexing:
+        </p>
+        <div class="code-wrapper">
+            <button class="copy-btn">📋</button>
+            <pre class="code-container">
+<div class="line-numbers">
+1<br>2<br>3
+</div>
+<code class="code-content">
+<span class="variable">x</span> = <span class="variable">coordinates</span>[<span class="datatype">0</span>]
+<span class="variable">y</span> = <span class="variable">coordinates</span>[<span class="datatype">1</span>]
+<span class="function">print</span>(<span class="datatype">f"X: {x}, Y: {y}"</span>)
+                </code>
+            </pre>
+        </div>
+        <p>This would output: <code>X: 10, Y: 20</code></p>
+    </section>
+
+    <section>
+        <h3>Tuples vs Lists</h3>
+        <p>Key differences:</p>
+        <ul>
+            <li>Lists are mutable, tuples are immutable.</li>
+            <li>Lists use square brackets <code>[]</code>, tuples use parentheses <code>()</code>.</li>
+            <li>Tuples are generally faster and use less memory than lists.</li>
+        </ul>
+    </section>
+</main>
+
+<div class="button-nav">
+    <button class="nav-button" onclick="location.href='lesson3.html'">⬅ Previous Lesson</button>
+    <button class="nav-button" onclick="location.href='lesson5.html'">➡ Next Lesson</button>
+</div>
+
+<script src="../scripts/copy-code.js"></script>
+</body>
+</html>
