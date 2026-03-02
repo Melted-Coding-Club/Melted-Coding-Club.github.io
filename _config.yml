@@ -16,7 +16,7 @@ description: >-
   Learn to code with step-by-step lessons. A place for students to work through
   programming fundamentals and build skills.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/website"  # the subpath of your site, e.g. /blog
+baseurl: ""  # the subpath of your site, e.g. /blog
 twitter_username: ""
 github_username: ""
 
