@@ -15,8 +15,8 @@ email: your-email@example.com
 description: >-
   Learn to code with step-by-step lessons. A place for students to work through
   programming fundamentals and build skills.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "/website" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://username.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/website" # the subpath of your site, e.g. /blog
 twitter_username: ""
 github_username: ""
 
