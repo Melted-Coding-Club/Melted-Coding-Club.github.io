@@ -16,7 +16,7 @@ description: >-
   Learn to code with step-by-step lessons. A place for students to work through
   programming fundamentals and build skills.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://melted-coding-club.github.io/website/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://melted-coding-club.github.io/website" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
 github_username: ""
 
