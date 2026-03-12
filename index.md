@@ -38,7 +38,7 @@ Welcome to Coding Club. Work through the lessons below to learn programming step
 ## Tutorials
 
 ### Unit 1
-- [Tutorial 1.1]({{ site.baseurl }}/tutorials/1-1/)
+- [Tutorial 1.1 - Tetris]({{ site.baseurl }}/tutorials/1-1/)
 - [Tutorial 1.2]({{ site.baseurl }}/tutorials/1-2/)
 - [Tutorial 1.3]({{ site.baseurl }}/tutorials/1-3/)
 
